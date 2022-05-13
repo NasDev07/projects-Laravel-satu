@@ -22,8 +22,20 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">No Telpon</label>
-                            <input type="number" name="notelpon" value="{{ $data->notelpon }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="exampleInputEmail1" class="form-label">Nip</label>
+                            <input type="number" name="nip" value="{{ $data->nip }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Kehadiran</label>
+                            <select name="status" class="form-select" aria-label="Default select example">
+                                <option selected>{{ $data->status }}</option>
+                                <option value="hadir">hadir</option>
+                                <option value="alpha">alpha</option>
+                                <option value="izin">izin</option>
+                                <option value="sakit">sakit</option>
+                                <option value="cuti">cuti</option>
+                                <option value="tidakhadir">tidak hadir</option>
+                            </select>
                         </div>
                         
                         <button type="submit" class="btn btn-primary">Submit</button>

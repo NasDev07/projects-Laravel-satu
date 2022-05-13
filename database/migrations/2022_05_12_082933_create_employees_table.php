@@ -17,8 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
-            $table->bigInteger('notelpon');
+            $table->bigInteger('nip');
             $table->string('foto');
+            $table->enum('status', ['hadir', 'alpha', 'izin', 'sakit', 'cuti', 'tidak hadir']);
             $table->timestamps();
         });
     }

@@ -36,9 +36,9 @@
                             <img src="{{ asset('images/' . $row->foto) }}" width="50" alt="">
                         </td>
                         <td>{{ $row->jenis_kelamin }}</td>
-                        <td>0{{ $row->notelpon }}</td>
+                        <td>{{ $row->nip }}</td>
                         <td>{{ $row->created_at }}</td> <!-- ->diffForHumans() (ini unutk 01 minute ago , format) -->
-                        <td>0{{ $row->notelpon }}</td>
+                        <td>{{ $row->status }}</td>
                         <td>
                             <a href="/tampilkandata/{{ $row->id }}" class="btn btn-info">Edit</a>
                             <a href="#" type="button" class="btn btn-danger delete" data-id="{{ $row->id }}"

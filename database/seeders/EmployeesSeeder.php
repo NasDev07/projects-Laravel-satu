@@ -18,7 +18,11 @@ class EmployeesSeeder extends Seeder
         DB::table('employees')->insert([
             'nama' => 'Nasruddin',
             'jenis_kelamin' => 'laki-laki',
-            'notelpon' => '082267429797',
+            'nip' => '200180020',
+            'status' => 'hadir',
+            'foto' => '',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }
