@@ -7,8 +7,14 @@ use Illuminate\Http\Request;
 
 class EmployeesController extends Controller
 {
-    public function index () {
-        $data = Employees::all();
+    public function index (Request $request) {
+
+        if($request->has('search')) {
+            $data = Employees::where('nama', 'LIKE', '%' . $request->search . '%')->paginate(5);
+        }
+        else {
+            $data = Employees::paginate(5);
+        }
         // dd($data); // dd untuk menampilkan data yang ada
         return view('datapegawai',[
             "title" => "Data Pegawai",

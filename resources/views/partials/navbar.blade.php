@@ -17,6 +17,14 @@
                     <a class="nav-link {{ ($title === "Data Pegawai") ? 'active' : '' }}" href="/pegawai">Absen Pegawai</a>
                 </li>
             </ul>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <form action="/pegawai" method="GET">
+                        <input type="search" id="inputPassword6" name="search" class="form-control"
+                            aria-describedby="passwordHelpInline">
+                    </form>
+                </div>
+            </div>
                 <a class="nav-link text-dark {{ ($title === "Join") ? 'active' : '' }}" href="/join">Hi, </a>
         </div>
     </div>
