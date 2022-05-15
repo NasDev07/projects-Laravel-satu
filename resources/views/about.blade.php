@@ -2,95 +2,126 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>About</h1>
 
-    <section id="about" class="about-mf sect-pt4 route my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="box-shadow-full">
-                        <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                            <div class="col-sm-6 col-md-5">
-                                <div class="about-img">
-                                    <img src="{{ $image }}" class="img-fluid rounded b-shadow-a border-info" alt=""  height="100">
-                                </div>
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="https://images.unsplash.com/photo-1652454159675-11ead6275680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="https://images.unsplash.com/photo-1652454159675-11ead6275680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" style="margin-top: 25%;">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="https://images.unsplash.com/photo-1652454159675-11ead6275680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="https://images.unsplash.com/photo-1652454159675-11ead6275680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>eLEARNING</h1>
+                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                            <div class="ps-4">
+                                <p class="mb-0">Years of</p>
+                                <h6 class="text-uppercase mb-0">Experience</h6>
                             </div>
-                            <div class="col-sm-6 col-md-7">
-                                <div class="about-info">
-                                    <p><span class="title-s">Name: </span> <span>Nasruddin 200180020</span></p>
-                                    <p><span class="title-s">Profile: </span> <span>Front End Web Developer</span></p>
-                                    <p><span class="title-s">Email: </span> <span>nasruddin.200180020@mhs.unimal.ac.id</span></p>
-                                    <p><span class="title-s">Phone: </span> <span>(+62) 822-6742-9797</span></p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                            <div class="ps-4">
+                                <p class="mb-0">Popular</p>
+                                <h6 class="text-uppercase mb-0">Master Chefs</h6>
                             </div>
-                            </div>
-                            <div class="skill-mf">
-                            <p class="title-s">My Skill</p>
-                            <span>HTML</span> <span class="pull-right">85%</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>CSS3</span> <span class="pull-right">65%</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>Bootstrep</span> <span class="pull-right">80%</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>JAVASCRIPT</span> <span class="pull-right">50%</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
 
-                            <div class="sosial text-info my-5">
-                                <p class="lead"><b>Sosial Media</b></p>
-                                <a class="fbk" href="https://web.facebook.com/nas.r.16100" target="_blank"><i class="bi bi-facebook"></i></a>
-                                <a class="ig" href="https://www.instagram.com/nas_staiko/" target="_blank"><i class="bi bi-instagram"></i></a>
-                                <a class="git" href="https://github.com/nasdev07" target="_blank"><i class="bi bi-github"></i></a>
-                                <a class="wa" href="https://wa.me/+6282164161283?text=Halo%20NasDev" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="about-me pt-4 pt-md-0">
-                            <div class="title-box-2">
-                                <h5 class="title-left">
-                                About me
-                                </h5>
-                            </div>
-                            <p class="text-dark">
-                                🚀 {{ $name }} <br>
-                                📘  Nim : 200180020 <br>
-                                👨‍🎓  Prodi : A1 Sistem Informasi <br>
-                                👩‍💻  Mata Kuliah : Pemogramman Web II <br>
-                                🐱‍🏍{{ $email }}
-                            </p>
-                            <p class="lead">
-                                Halo dan selamat datang di NasDev Developer Shop, tempat untuk menemukan Pakaian dan 
-                                Aksesori terbaik untuk setiap selera dan kesempatan. Kami benar-benar memeriksa 
-                                kualitas barang kami, bekerja hanya dengan pemasok yang dapat diandalkan sehingga Anda
-                                hanya menerima produk dengan kualitas terbaik.
-                            </p>
-                            <p class="lead">
-                                Kami di NasDev Developer Shop percaya pada kualitas tinggi dan layanan pelanggan yang 
-                                luar biasa. Namun yang terpenting, kami percaya berbelanja adalah hak, 
-                                bukan kemewahan, jadi kami berusaha memberikan produk terbaik dengan harga paling 
-                                terjangkau, dan mengirimkannya kepada Anda di mana pun Anda berada.
-                            </p>
-                            <p class="lead">
-                                Saya seorang Mahasiswa Sistem Informasi dari universitas Malikussaleh,
-                                memiliki minat di Front-end Developer dan UI/UX Designer.
-                            </p>
-                            </div>
-                        </div>
-                        </div>
+<!-- Team Start -->
+<div class="container-xxl pt-5 pb-3">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+            <h1 class="mb-5">Our Master Chefs</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1646673618973-13d04121d25f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                    <h5 class="mb-0">Full Name</h5>
+                    <small>Designation</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1652477631519-fcd55def4e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                    </div>
+                    <h5 class="mb-0">Full Name</h5>
+                    <small>Designation</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1652531121284-9f567cb1c893?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                    </div>
+                    <h5 class="mb-0">Full Name</h5>
+                    <small>Designation</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1652509140600-5c72b9993fe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="" height="50%">
+                    </div>
+                    <h5 class="mb-0">Full Name</h5>
+                    <small>Designation</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<!-- Team End -->
 
 @endsection

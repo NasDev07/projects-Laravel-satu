@@ -16,6 +16,7 @@ class EmployeesSeeder extends Seeder
     public function run()
     {
         DB::table('employees')->insert([
+            // 'company_id' => '1',
             'nama' => 'Nasruddin',
             'jenis_kelamin' => 'laki-laki',
             'nip' => '200180020',
@@ -24,5 +25,14 @@ class EmployeesSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        // DB::table('company')->insert([
+        //     'nama_company' => 'PT. ABC',
+        //     'csip' => '123456789',
+        //     'pekerjaan' => 'Programmer',
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ]);
+        
     }
 }

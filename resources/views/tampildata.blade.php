@@ -25,6 +25,10 @@
                             <label for="exampleInputEmail1" class="form-label">Nip</label>
                             <input type="number" name="nip" value="{{ $data->nip }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
+                        {{-- <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama Compony</label>
+                            <input type="text" name="nama_compony" value="{{ $data->nama_compony }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div> --}}
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Kehadiran</label>
                             <select name="status" class="form-select" aria-label="Default select example">

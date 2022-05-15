@@ -8,13 +8,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" aria-current="page" href="/">Home</a>
+                    <a class="nav-link {{ $title === 'Home' ? 'active' : '' }}" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="/about">About</a>
+                    <a class="nav-link {{ $title === 'About' ? 'active' : '' }}" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ ($title === "Data Pegawai") ? 'active' : '' }}" href="/pegawai">Absen Pegawai</a>
+                    <a class="nav-link {{ $title === 'Data Pegawai' ? 'active' : '' }}" href="/pegawai">Absen
+                        Pegawai</a>
                 </li>
             </ul>
             <div class="row g-3 align-items-center">
@@ -25,7 +26,7 @@
                     </form>
                 </div>
             </div>
-                <a class="nav-link text-dark {{ ($title === "Join") ? 'active' : '' }}" href="/join">Hi, </a>
+            <a class="nav-link text-dark {{ $title === 'Join' ? 'active' : '' }}" href="/join">Hi, </a>
         </div>
     </div>
 </nav>

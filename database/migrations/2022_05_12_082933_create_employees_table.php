@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            // $table->unsignedBigInteger('company_id');// foreign key); 
             $table->string('nama');
             $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
             $table->bigInteger('nip');
@@ -22,7 +23,16 @@ return new class extends Migration
             $table->enum('status', ['hadir', 'alpha', 'izin', 'sakit', 'cuti', 'tidak hadir']);
             $table->timestamps();
         });
+
+        // Schema::create('company', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->string('nama_company');
+        //     $table->string('csip');
+        //     $table->string('pekerjaan');
+        //     $table->timestamps();
+        // });
     }
+
 
     /**
      * Reverse the migrations.
@@ -33,4 +43,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('employees');
     }
+    
 };
